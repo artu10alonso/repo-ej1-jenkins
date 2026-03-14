@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Clonar repo GH a jk workspacee') {
+        stage('Clonar repo GH a jk workspace') {
             steps {
                 checkout scm
             }
