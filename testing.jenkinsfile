@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clonar repo GH a jk workspace') {
+            steps {
+                checkout scm
+            }
+        }
+        stage ('Exec de powershell script') {
+            steps {
+                powershell './script_test.ps1'
+            }
+        }
+            
+    } 
+
+}
